@@ -7,6 +7,7 @@ module ActionController
 
   class IntegrationTest
     include Capybara
+    # Capybara.default_driver = :selenium
   end
 
 end
