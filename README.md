@@ -13,7 +13,7 @@ on `test_helper`.
     require 'tartare'
 
 **Tartare** will install [Capybara][2] for you. By default `integration` tests
-are performed with `Google Chrome`. Capybara's DSL is available at [Capybara][2].
+are performed with [Google Chrome][5]. Capybara's DSL is available at [Capybara][2].
 
 ## Usage
 
@@ -61,3 +61,4 @@ Copyright © 2010 Francesc Esplugas, released under the MIT license
 [2]: http://rubygems.org/gems/capybara
 [3]: http://rubygems.org/gems/contest
 [4]: http://rubygems.org/gems/minitest
+[5]: http://www.google.es/chrome
