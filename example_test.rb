@@ -1,5 +1,3 @@
-# test/integration/example_test.rb
-
 require 'integration_test_helper'
 
 class ExampleTest < ActionController::IntegrationTest
@@ -11,7 +9,7 @@ class ExampleTest < ActionController::IntegrationTest
       visit '/'
       click_link "Create Account"
 
-      fill_in 'Email', :with => 'john.lock@lost.com'
+      fill_in 'Email', :with => 'john.locke@lost.com'
       fill_in 'Password', :with => '4815162342'
       fill_in 'Password confirmation', :with => '4815162342'
       click 'Sign up'

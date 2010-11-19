@@ -1,4 +1,6 @@
-I like Steak, but I'd rather an "Steak Tartare".
+# Tartare
+
+I like Steak, but I'd rather an steak **Tartare**.
 
 Include in your `Gemfile` the following gems:
 

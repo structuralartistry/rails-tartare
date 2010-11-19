@@ -1,6 +1,5 @@
 require 'test_helper'
 require 'capybara/rails'
-# require "#{Rails.root}/db/seeds"
 
 module ActionController
 
@@ -11,7 +10,7 @@ module ActionController
          Capybara::Driver::Selenium.new(app, :browser => :chrome)
     end
 
-    # Capybara.default_driver = :selenium_chrome
+    Capybara.default_driver = :selenium_chrome
   end
 
 end
