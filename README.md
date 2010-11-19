@@ -4,7 +4,7 @@ I like `Steak`, but I'd rather an steak **Tartare** for my integration tests.
 To start using it include in your `Gemfile` the following gems:
 
     group :test do
-      gem 'tartare', :git => 'https://fesplugas@github.com/fesplugas/rails-tartare.git', :require => 'tartare'
+      gem 'tartare', :git => 'https://github.com/fesplugas/rails-tartare.git', :require => 'tartare'
     end
 
 ## Usage
