@@ -1,13 +1,17 @@
-# test/integration_test_helper.rb
-
 require 'test_helper'
 require 'capybara/rails'
+# require "#{Rails.root}/db/seeds"
 
 module ActionController
 
   class IntegrationTest
     include Capybara
-    # Capybara.default_driver = :selenium
+
+    Capybara.register_driver :selenium_chrome do |app|
+         Capybara::Driver::Selenium.new(app, :browser => :chrome)
+    end
+
+    # Capybara.default_driver = :selenium_chrome
   end
 
 end
