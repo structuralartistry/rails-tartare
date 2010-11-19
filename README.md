@@ -48,3 +48,5 @@ say you are using shoulda and want to use `context` and `should` on your tests.
     end
 
 You can do the same for `contest`, `minitest` ...
+
+Copyright © 2010 Francesc Esplugas, released under the MIT license
