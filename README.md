@@ -1,11 +1,16 @@
 # Tartare
 
 I like `Steak`, but I'd rather an steak **Tartare** for my integration tests.
-To start using it include in your `Gemfile` the following gems:
+To start using it include in your `Gemfile` the following gems and require it
+on `test_helper`.
 
+    # Gemfile
     group :test do
-      gem 'tartare', :git => 'https://github.com/fesplugas/rails-tartare.git', :require => 'tartare'
+      gem 'tartare', :git => 'https://github.com/fesplugas/rails-tartare.git', :require => false
     end
+
+    # test_helper.rb
+    require 'tartare'
 
 ## Usage
 
