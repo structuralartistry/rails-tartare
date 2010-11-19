@@ -33,8 +33,8 @@ And start using it ...
 
 ## Tip
 
-If you are using `shoulda` you can alias the `context` and `should` method to
-`feature` and `scenario` to make it more `awesome`.
+Remember you can use alias to match method names with your preferences. Lets
+say you are using shoulda and want to use `context` and `should` on your tests.
 
     module Shoulda
 
@@ -47,5 +47,4 @@ If you are using `shoulda` you can alias the `context` and `should` method to
 
     end
 
-
-Enjoy!
+You can do the same for `contest`, `minitest` ...
