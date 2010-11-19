@@ -1,38 +1,46 @@
 # Tartare
 
-I like Steak, but I'd rather an steak **Tartare**.
-
-Include in your `Gemfile` the following gems:
+I like `Steak`, but I'd rather an steak **Tartare** for my integration tests.
+To start using it include in your `Gemfile` the following gems:
 
     group :test do
-      gem 'capybara'
-      gem 'shoulda'
+      gem 'tartare', :git => 'https://fesplugas@github.com/fesplugas/rails-tartare.git', :require => 'tartare'
     end
 
 ## Usage
 
-    require 'integration_test_helper'
+Create an integration test:
 
-    class ExampleTest < ActionController::IntegrationTest
+    $ rails generate integration_test welcome
 
-      feature "User visits the site" do
+And start using it ...
 
-        scenario "create a new account" do
+    require 'test_helper'
 
-          visit '/'
-          click_link "Create Account"
+    class WelcomeTest < ActionDispatch::IntegrationTest
+      fixtures :all
 
-          fill_in 'Email', :with => 'john.locke@lost.com'
-          fill_in 'Password', :with => '4815162342'
-          fill_in 'Password confirmation', :with => '4815162342'
-          click 'Sign up'
+      # Replace this with your real tests.
+      test "the truth" do
+        visit '/'
+      end
+    end
 
-          assert page.has_content?('Welcome')
+## Tip
 
-        end
+If you are using `shoulda` you can alias the `context` and `should` method to
+`feature` and `scenario` to make it more `awesome`.
+
+    module Shoulda
+
+      module ClassMethods
+
+        alias :feature :context
+        alias :scenario :should
 
       end
 
     end
+
 
 Enjoy!

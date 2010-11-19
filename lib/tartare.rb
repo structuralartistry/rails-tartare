@@ -1,4 +1,3 @@
-require 'test_helper'
 require 'capybara/rails'
 
 module ActionController
@@ -11,17 +10,6 @@ module ActionController
     end
 
     Capybara.default_driver = :selenium_chrome
-  end
-
-end
-
-module Shoulda
-
-  module ClassMethods
-
-    alias :feature :context
-    alias :scenario :should
-
   end
 
 end
